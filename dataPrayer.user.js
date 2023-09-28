@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         dataPrayer
 // @namespace    http://tampermonkey.net/
-// @version      0.2
+// @version      0.3
 // @description  a better approach to show dataLayer events
 // @author       znerolki
 // @match        https://stage.cue.kleinezeitung.at/
@@ -23,9 +23,9 @@
   
         if (allowList.includes(value.event_name)) {
           let imp = value[value.event_name].impressions[0];
-          let headline = `%c${value.event_name} %cArea:%c ${imp.onsitead_creation} %cContainer:%c ${imp.onsitead_variant} %c(onsitead_detailed_placement) %c\u00A9 dataPrayer`;
+          let headline = `%c${value.event_name} %cArea:%c ${imp.onsitead_creation} %cFirst Container:%c ${imp.onsitead_variant} %c(onsitead_detailed_placement) %c\u00A9 dataPrayer`;
           console.log(headline,
-                      'font-size:14px;color:white;background:#282828;',
+                      'font-size:12px;color:white;background:#282828;',
                       'color:white; background:#007acc;font-size:14px',
                       'font-size:12px;color:white;background:#282828',
                       'font-size:14px;color:white;background:#cc7a00;',
@@ -39,4 +39,3 @@
       },
     });
   })();
-  

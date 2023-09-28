@@ -5,9 +5,9 @@
 // @version      0.4
 // @description  a better approach to show dataLayer events
 // @author       znerolki
-// @match        https://test.cue.kleinezeitung.at/
-// @match        https://stage.cue.kleinezeitung.at/
-// @match        http://local-klz.news:2000/
+// @match        https://test.cue.kleinezeitung.at/*
+// @match        https://stage.cue.kleinezeitung.at/*
+// @match        http://local-klz.news:2000/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=kleinezeitung.at
 // @grant        GM.setValue
 // @grant        GM.deleteValue

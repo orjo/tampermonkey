@@ -2,7 +2,7 @@
 // @name         dataPrayer
 // @namespace    https://www.kleinezeitung.at
 // @website      https://www.kleinezeitung.at
-// @version      0.4
+// @version      0.5
 // @description  a better approach to show dataLayer events
 // @author       znerolki
 // @match        https://test.cue.kleinezeitung.at/*
